@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KK Computer Coaching</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        /* Navbar */
+        nav {
+            background: #ffffff;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 12px;
+            font-weight: normal;
+            margin-top: 3px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            margin-left: 22px;
+            font-weight: 500;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 80px 8%;
+            text-align: center;
+            background: linear-gradient(135deg, #eaf2ff, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #1769ff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1769ff;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 8%;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .title h2 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .title p {
+            color: #666;
+        }
+
+        /* Courses */
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card .icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .learn {
+            color: #1769ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .feature h3 {
+            margin: 12px 0 8px;
+        }
+
+        .feature p {
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        footer p {
+            color: #cbd5e1;
+            margin-top: 8px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav div:last-child {
+                display: none;
+            }
+
+            .hero {
+                padding: 60px 5%;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            section {
+                padding: 45px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            💻 RD COMPUTER COACHING
+            <span>Learn • Practice • Grow</span>
+        </div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+
+        <h1>
+            Learn Computer Skills
+            <span>For Free</span>
+        </h1>
+
+        <p>
+            Free computer education, notes, practice work and quizzes
+            for students.
+        </p>
+
+        <a href="#courses" class="btn">
+            Start Learning →
+        </a>
+
+    </section>
+
+
+    <!-- Courses -->
+    <section id="courses">
+
+        <div class="title">
+            <h2>Our Courses</h2>
+            <p>Learn useful computer skills step-by-step</p>
+        </div>
+
+        <div class="courses">
+
+            <div class="card">
+                <div class="icon">🖥️</div>
+                <h3>Computer Basics</h3>
+                <p>
+                    Learn computer fundamentals, hardware,
+                    software and operating systems.
+                </p>
+                <a href="#" class="learn">Start Course →</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">📝</div>
+                <h3>MS Word</h3>
+                <p>
+                    Learn document creation, formatting,
+                    tables and useful Word tools.
+                </p>
+                <a href="#" class="learn">Start Course →</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>MS Excel</h3>
+                <p>
+                    Learn formulas, functions, tables,
+                    charts and practical Excel work.
+                </p>
+                <a href="#" class="learn">Start Course →</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">📽️</div>
+                <h3>PowerPoint</h3>
+                <p>
+                    Create attractive presentations
+                    and learn PowerPoint tools.
+                </p>
+                <a href="#" class="learn">Start Course →</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">🧾</div>
+                <h3>Tally Prime</h3>
+                <p>
+                    Learn accounting basics and
+                    Tally Prime with GST.
+                </p>
+                <a href="#" class="learn">Start Course →</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">👨‍💻</div>
+                <h3>Programming</h3>
+                <p>
+                    Start coding with HTML, CSS,
+                    JavaScript and Python.
+                </p>
+                <a href="#" class="learn">Start Course →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section id="features">
+
+        <div class="title">
+            <h2>What Students Get</h2>
+            <p>Everything you need to learn computer skills</p>
+        </div>
+
+        <div class="features">
+
+            <div class="feature">
+                <div class="icon">📚</div>
+                <h3>Free Notes</h3>
+                <p>Easy-to-understand study material.</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">📝</div>
+                <h3>Practice Work</h3>
+                <p>Practical exercises for better learning.</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">🧠</div>
+                <h3>Online Quizzes</h3>
+                <p>Test your knowledge after every topic.</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">🆘</div>
+                <h3>Student Help</h3>
+                <p>Get help when you are stuck.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <div class="title">
+            <h2>Need Help?</h2>
+            <p>
+                RD Computer Coaching is here to help students
+                learn computer skills.
+            </p>
+
+            <br>
+
+            <a href="#" class="btn">
+                Contact Us
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>💻 RD COMPUTER COACHING</h3>
+
+        <p>
+            Free Computer Education for Students
+        </p>
+
+        <p>
+            © 2026 KK Computer Coaching. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
